@@ -33,11 +33,11 @@ struct ContentView: View {
                 
               } label: {
                 Circle()
-                  .fill(color)
+                  .stroke(.black, lineWidth: 2)
+                  .fill(.gray.opacity(0.2))
                   .frame(maxWidth: 50)
                   .overlay {
                     Image(systemName: "plus")
-                      
                       .foregroundStyle(.black)
                   }
               }
