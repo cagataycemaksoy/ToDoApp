@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject private var tasks = ToDoViewModel()
+  
   private let color = Color(red: 0.7, green: 0.8, blue: 0.9)
   private let date = Date.now.formatted(date: .abbreviated, time: .omitted)
   
